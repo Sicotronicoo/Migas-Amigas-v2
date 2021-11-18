@@ -19,19 +19,12 @@ header > a{
 header > a:hover{
     color:#f6f7f8;
 }
-.introduccion1{
-    display:flex;
-    flex-direction: row;
-    margin-left:10%;
-    width: 10%;
-}
 .introduccion{
-    display:flex;
-    flex-direction:column;
-}
-.primerosPanes{
-    display:flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    justify-items: center;
 }
 
 nav{
@@ -63,10 +56,6 @@ section{
     height: auto;
     margin:0 auto;
 }
-.imagenInicio{
-    display: flex;
-    flex-direction:column-reverse;
-}
 .imagenPan{
     display: flex;
 }
@@ -96,10 +85,11 @@ section{
 }
 
 footer{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
     background-color: #434343;
-    height: 50px;
     width: 100%;
-    position: relative;
     bottom: 0;
 }
 .pastelDer{
@@ -111,18 +101,38 @@ footer{
 .panDer h2{
     margin-top:0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 45px;
+    font-size: 2.813em;
 }
 .panDer p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
+    font-size: 1.375em;
 }
 .panIzq h2{
     margin-top:0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 45px;
+    font-size: 2.813em;
 }
 .panIzq p{
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.375em;
+}
+.videocontenedor{
+    display: grid;
+    justify-items: center;
+}
+.video{
+    order:1;
+}
+.contactoo{
+    display: grid;
+    justify-items:center;
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
+}
+.contactoimg{
+    height: 50%;
+}
+.imgfooter{
+    height: 1.563em;
+    width: 1.563em;
 }
